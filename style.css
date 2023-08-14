@@ -57,3 +57,65 @@ footer {
     height: 100px;
     text-align: center;
 }
+/* if two selectors share the same declarations eg.
+.read {
+    color: white;
+    background-color: black;
+    several unique declarations;
+}
+.unread {
+    color: white;
+    background-color: black;
+    several unique declarations; 
+}
+ then it is recommended to combine the two selctors together as a commaseparated list;
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+.read {
+    several unique declarations;
+}
+.unread {
+    several unique declarations;
+}
+
+---Chaining selectors---
+
+<div>
+    <div class="subsection header">Latest Posts</div>
+    <p class="subsection preview">This is where a preview for a post might go.</p>
+</div>
+
+on the css file 
+
+.subsection.header {
+    color: red;
+} //this is only relevant to an element that has both subsection and header classes 
+
+we can also chain a class and an ID
+<div>
+    <div class="subsection header">Latest Posts</div>
+    <p class="subsection" id="preview">This is where a preview for a post might go.</p>
+</div>
+
+again the css file 
+
+.subsection.header {
+    color: red;
+}
+
+.subsection#preview {
+    color: blue;
+}
+
+if you want to adjust the size of the image without causing it to lose its proportions, you would use a value of "auto" for the height and adjust the width value like so;
+
+img {
+    height: auto;
+    width: 500px;
+}
+
+
+*/
