@@ -10,10 +10,12 @@
 <body>
     <h1 class="headings">Odin Recipes</h1>
     <ul id="index">
-        <li><a href="recipes/macncheese.html">Homemade Mac and Cheese</a></li>
-        <li><a href="recipes/cranberry.html">Cranberry Sauce</a></li>
-        <li><a href="recipes/mashed.html">Yummy Sweet Potato casserole</a></li>
-    </ul>
+        <li><a href="recipes/macncheese.html">Homemade Mac and Cheese</a></li> <!---adding the following attribute on the <a>> tag "target='_blank' will open the link in a new tab and target='-self' opens the link in the current tab"--->
+        <li><a href="recipes/cranberry.html">Cranberry Sauce</a></li> <!-- after target='_blank/_self' its best practice to add rel='noopener noreferrer' which noopener value prevents the opened link from gaining access-->
+        <li><a href="recipes/mashed.html">Yummy Sweet Potato casserole</a></li> <!-- to the webpage from which it was opened and the noreferrer prevents the opened link from knowing which webpage or resource has a link (or 'reference') to it.-->
+    </ul> <!-- the noopener prevents phishing attacks where the opened link may change the original webpage to a different on to trick users -->
+    <!--links to other pages within our own page are called relative links which includes file path to other page, relative to the page you are creating the link on-->
+    <!-- links to pasges on other website on the internet are called absolute links-->
     <footer id="index-footer">
         <p>The Odin Project exercise, created by Jack Ballack 2022</p>
         <a href="https://github.com/hlekoa/odin-recipes">Github link</a>
